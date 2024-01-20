@@ -1,6 +1,9 @@
+// Bootstrap variables overrides
+@import "variables";
+
 // Bootstrap styles
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-h1 {
-    color: red;
+button {
+    color: black
 }
