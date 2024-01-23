@@ -2,8 +2,15 @@
 @import "variables";
 
 // Bootstrap styles
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-button {
-    color: black
+// Bootstrap SASS functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+.btn-custom {
+    @extend .btn-warning;
+
+    &:hover {
+        @extend .btn-danger;
+    }
 }
